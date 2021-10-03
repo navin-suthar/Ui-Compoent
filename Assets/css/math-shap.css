@@ -1,0 +1,420 @@
+/* square shap */
+
+.square{
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+/* rectangle shap */
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background: #555;
+}
+
+/* circle shap */
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #555;
+  border-radius: 50%
+}
+
+/* oval shap */
+
+.oval {
+  width: 200px;
+  height: 100px;
+  background: #555;
+  border-radius: 100px / 50px;
+}
+
+/* triangle-up shap */
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #555;
+}
+
+/* triangle-down shap */
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #555;
+}
+
+/* triangle-left shap */
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #555;
+  border-bottom: 50px solid transparent;
+}
+
+/* triangle-right shap */
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid #555;
+  border-bottom: 50px solid transparent;
+}
+
+/* triangle-topleft shap */
+
+.triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #555;
+  border-right: 100px solid transparent;
+}
+
+/* triangle-topright shap */
+
+.triangle-topright {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #555;
+  border-left: 100px solid transparent;
+}
+
+/* triangle-bottomleft shap */
+
+.triangle-bottomleft {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #555;
+  border-right: 100px solid transparent;
+}
+
+/* triangle-bottomright shap */
+
+.triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #555;
+  border-left: 100px solid transparent;
+}
+
+/* trapezoid shap */
+
+.trapezoid {
+  border-bottom: 100px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+/* parallelogram shap */
+
+.parallelogram {
+  width: 150px;
+  height: 100px;
+  transform: skew(20deg);
+  background: #555;
+}
+
+/* star-six shap */
+
+.star-six {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #555;
+  position: relative;
+}
+.star-six:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #555;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
+
+/* pentagon shap */
+
+.pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: #555 transparent;
+}
+.pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent #555;
+}
+
+/* hexagon shap */
+
+.hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: #555;
+  position: relative;
+}
+.hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #555;
+}
+.hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #555;
+}
+
+/* octagon shap */
+
+.octagon {
+  width: 100px;
+  height: 100px;
+  background: #555;
+  position: relative;
+}
+.octagon:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid #555;
+  border-left: 29px solid #eee;
+  border-right: 29px solid #eee;
+}
+.octagon:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid #555;
+  border-left: 29px solid #eee;
+  border-right: 29px solid #eee;
+}
+
+/* heart shap */
+
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #555;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* diamond shap */
+
+.diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #555;
+  position: relative;
+  top: -50px;
+}
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: #555;
+}
+
+/* egg shap */
+
+.egg {
+  display: block;
+  width: 126px;
+  height: 180px;
+  background-color: #555;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+/* pacman shap */
+
+.pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #555;
+  border-left: 60px solid #555;
+  border-bottom: 60px solid #555;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* moon shap */
+
+.moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #555;
+}
+
+/* flag shap */
+
+.flag {
+  width: 110px;
+  height: 56px;
+  box-sizing: content-box;
+  padding-top: 15px;
+  position: relative;
+  background: #555;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid #eee;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+}
+
+/* space-invader shap */
+
+.space-invader {
+  box-shadow: 0 0 0 1em #555,
+  0 1em 0 1em #555,
+  -2.5em 1.5em 0 .5em #555,
+  2.5em 1.5em 0 .5em #555,
+  -3em -3em 0 0 #555,
+  3em -3em 0 0 #555,
+  -2em -2em 0 0 #555,
+  2em -2em 0 0 #555,
+  -3em -1em 0 0 #555,
+  -2em -1em 0 0 #555,
+  2em -1em 0 0 #555,
+  3em -1em 0 0 #555,
+  -4em 0 0 0 #555,
+  -3em 0 0 0 #555,
+  3em 0 0 0 #555,
+  4em 0 0 0 #555,
+  -5em 1em 0 0 #555,
+  -4em 1em 0 0 #555,
+  4em 1em 0 0 #555,
+  5em 1em 0 0 #555,
+  -5em 2em 0 0 #555,
+  5em 2em 0 0 #555,
+  -5em 3em 0 0 #555,
+  -3em 3em 0 0 #555,
+  3em 3em 0 0 #555,
+  5em 3em 0 0 #555,
+  -2em 4em 0 0 #555,
+  -1em 4em 0 0 #555,
+  1em 4em 0 0 #555,
+  2em 4em 0 0 #555;
+  background: #555;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+
+/* yin-yang shap */
+
+.yin-yang {
+  width: 96px;
+  box-sizing: content-box;
+  height: 48px;
+  background: #eee;
+  border-color: #555;
+  border-style: solid;
+  border-width: 2px 2px 50px 2px;
+  border-radius: 100%;
+  position: relative;
+}
+.yin-yang:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #eee;
+  border: 18px solid #555;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+.yin-yang:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #555;
+  border: 18px solid #eee;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}

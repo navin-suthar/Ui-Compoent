@@ -1,0 +1,22 @@
+.form-group{
+  padding-top:15px;
+  width: 100%;
+}
+
+.form-label{
+  float: left;
+  padding-bottom: 4px;
+}
+
+.form-control-round {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  padding: 8px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  outline: none;
+  width:100%;
+}

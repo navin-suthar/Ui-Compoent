@@ -1,0 +1,14 @@
+.radio-button{
+  border:2px solid white;
+  box-shadow:0 0 0 1px #000;
+  appearance:none;
+  border-radius:50%;
+  width:13px;
+  height:13px;
+  background-color:#fff;
+  transition:all ease-in 0.2s;
+
+}
+.radio-button:checked{
+  background-color:#000;
+}
